@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Interactive Photo Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css-master/normalize.css">
+    <link rel="stylesheet" type="text/css" href="dist/imagelightbox.min.css">  
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+    
+    <body>
+      
+        <input type="text" id="myInput"  name="searchPictures" onkeyup="myFunction()" value="" placeholder="Search" required>
+    
+    <div class = "container">
+        
+      <ul id="myUL">    
+             
+         <li><a  href="photos/01.jpg" data-imagelightbox="demo" data-ilb2-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="photos/thumbnails/01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields."/></a></li>   
+
+        <li><a href="photos/02.jpg"  data-imagelightbox="demo" data-ilb2-caption="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="photos/thumbnails/02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here."/></a></li>
+
+        <li><a href="photos/03.jpg" data-imagelightbox="demo" data-ilb2-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below." ><img src="photos/thumbnails/03.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below."/></a></li>
+
+        <li><a href="photos/04.jpg" data-imagelightbox="demo" data-ilb2-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."> <img src="photos/thumbnails/04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."/></a></li>
+
+        <li><a href="photos/05.jpg" data-imagelightbox="demo" data-ilb2-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="photos/thumbnails/05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.t"/></a></li>
+
+        <li><a href="photos/06.jpg" data-imagelightbox="demo" data-ilb2-caption="Fall is coming, I love when the leaves on the trees start to change color."> <img src="photos/thumbnails/06.jpg" alt="Fall is coming, I love when the leaves on the trees start to change color."/></a></li>
+
+        <li><a href="photos/07.jpg" data-imagelightbox="demo" data-ilb2-caption="I drove past this plantation yesterday, everything is so green!"> <img src="photos/thumbnails/07.jpg" alt="I drove past this plantation yesterday, everything is so green!"/></a></li>
+
+        <li><a href="photos/08.jpg" data-imagelightbox="demo" data-ilb2-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="photos/thumbnails/08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!"/></a></li>
+
+        <li><a href="photos/09.jpg"  data-imagelightbox="demo" data-ilb2-caption="We enjoyed a quiet stroll down this countryside lane."> <img src="photos/thumbnails/09.jpg" alt="We enjoyed a quiet stroll down this countryside lane."/></a></li>
+
+        <li><a href="photos/10.jpg"  data-imagelightbox="demo" data-ilb2-caption="Sunset at the coast! The sky turned a lovely shade of orange."> <img src="photos/thumbnails/10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange."/></a></li>
+            
+        <li><a href="photos/11.jpg"  data-imagelightbox="demo" data-ilb2-caption="I did a tour of a cave today and the view of the landscape below was breathtaking."> <img src="photos/thumbnails/11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking."/></a></li>
+
+        <li><a href="photos/12.jpg"  data-imagelightbox="demo" data-ilb2-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."> <img src="photos/thumbnails/12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.Bluebells"/></a></li>
+
+        </ul><!-- myUL -->
+    
+        </div> <!-- container -->
+    <script src="jquery-3.2.1.js"></script>
+    <script src="dist/imagelightbox.min.js"></script>    
+    <script>
+    $('a[data-imagelightbox="demo"]').imageLightbox({
+
+  selector:       'a[data-imagelightbox]',
+
+  id:             'imagelightbox',
+
+  allowedTypes:   'png|jpg|jpeg|gif',
+
+  animationSpeed: 250,
+
+  activity:       false,
+
+  arrows:         true,
+
+  button:         true,
+
+  caption:        true,
+
+  enableKeyboard: true,
+
+  lockBody:       false,
+
+  navigation:     false,
+
+  overlay:        true,
+
+  preloadNext:    true,
+
+  quitOnEnd:      false,
+
+  quitOnImgClick: false,
+
+  quitOnDocClick: true,
+
+  quitOnEscKey:   true
+
+});
+    
+    </script>                                       
+   <script src="main.js"></script>
+    </body>    
+</html>    
+    
